@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const photosApi = createApi({
   reducerPath: 'photosApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://api.unsplash.com/' }),
+  baseQuery: fetchBaseQuery({ baseUrl:'https://api.unsplash.com/'}),
   endpoints: (builder) => ({
     getAllPhotos: builder.query({
         query: () => `photos/?client_id=${API_KEY}`,
